@@ -1,0 +1,12 @@
+{
+    "presets": [ //preset is a collection of code transform plugins which are like the pieces of code that actually apply the transformations to our code. And the one that we select here is the env which stands for enviroment. Its called the babel-preset-environment. 
+        ["env", { //we can specify the env that we want to target. By env meant like the browsers. 
+            "targets": {
+                "browsers": [ //which browsers we want to target
+                    "last 5 versions", //Babel automatically fugures out which ES6 features it actually need to convert in order to work on the last 5 versions of all the browsers. 
+                    "ie >=8"
+                ]
+            }
+        }]
+    ]
+}
